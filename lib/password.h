@@ -1,4 +1,4 @@
 #include <array>
 #include <string>
 
-std::string generatePassword(int length, bool lowerLettersEnabled, bool upperLettersEnabled, bool numbersEnabled, bool specialsEnabled);
+std::string generatePassword(const int length, const bool lowerLettersEnabled, const bool upperLettersEnabled, const bool numbersEnabled, const bool specialsEnabled);
