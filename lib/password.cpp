@@ -10,7 +10,7 @@
 #define TYPE_NUMBERS 1
 #define TYPE_SPECIAL_CHARS 2
 
-std::string generatePassword(int length, bool lowerLettersEnabled, bool upperLettersEnabled, bool numbersEnabled, bool specialsEnabled) {
+std::string generatePassword(const int length, const bool lowerLettersEnabled, const bool upperLettersEnabled, const bool numbersEnabled, const bool specialsEnabled) {
 
     if (length == 0) {
         throw ZeroLengthPassword();
