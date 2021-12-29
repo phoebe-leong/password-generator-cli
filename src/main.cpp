@@ -8,32 +8,23 @@
 
 int main(int argc, char* argv[]) {
     int length = 12;
-    bool upperLetters = true;
-    bool lowerLetters = true;
-    bool numbers = true;
-    bool specials = true;
+    bool upperLetters = true, lowerLetters = true, numbers = true, specials = true;
+
     for (int i = 0; i < argc; i++) {
         std::string arg = std::string(argv[i]);
         if (arg == "--help") {
             std::cout
-                << std::endl
-                << "Usage: passgen [arguments]" << std::endl
-                << std::endl
-                << "    --help" << std::endl
-                << "        Displays this menu and exit" << std::endl
-                << std::endl
-                << "    -l / --length <number>" << std::endl
-                << "        Sets password length. Default: 12" << std::endl
-                << std::endl
-                << "    --no-letters" << std::endl
-                << "        Disables letters" << std::endl
-                << std::endl
-                << "    --no-numbers" << std::endl
-                << "        Disables numbers" << std::endl
-                << std::endl
-                << "    --no-specials" << std::endl
-                << "        Disables special characters" << std::endl
-                << std::endl;
+                << "\nUsage: passgen [arguments]\n"
+                << "    --help\n"
+                << "        Displays this menu and exit\n"
+                << "    -l / --length <number>\n"
+                << "        Sets password length. Default: 12\n"
+                << "    --no-letters\n"
+                << "        Disables letters\n"
+                << "    --no-numbers\n"
+                << "        Disables numbers\n"
+                << "    --no-specials\n"
+                << "        Disables special characters\n";
             return 0;
         } else if (arg == "-l" || arg == "--length") {
             i++;
